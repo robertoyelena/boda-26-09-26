@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOS CASAMOS</title>
+  <link rel="icon" href="Sellodecera_ sombra.png" type="image/png" />
+  <link rel="stylesheet" href="styles-index.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+
+    <img id="sobre" src="Sellodecera_ sombra.png" alt="Sobre" />
+    
+  </div>
+
+  <p style="text-align: center; margin-top: -250px;" class="letter-type">nos casamos</p>
+  <p style="text-align: center; margin-top: -70px;" class="letter-type-2">y no sería lo mismo sin vosotros.</p>
+
+  <script>
+    const img = document.getElementById("sobre");
+    let animando = false;
+
+    img.addEventListener("click", () => {
+      if (animando) return;
+
+      animando = true;
+      img.style.animation = 'spin 1.5s linear';
+
+      setTimeout(() => {
+        animando = false;
+        img.style.animation = 'none';
+        img.style.transform = 'rotate(0deg)';
+        window.location.href = "boda.html";
+      }, 1500);
+    });
+</script>
+</body>
+</html>

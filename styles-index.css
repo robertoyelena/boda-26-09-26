@@ -1,0 +1,62 @@
+body { 
+  font-family: system-ui, Arial, sans-serif; 
+  padding: 0px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "August Script";
+  src: url("August Script Bold Free.ttf") format("truetype");
+}
+
+.wrap {
+  background-image: url(sobre_blanco.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 780px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sobre {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  background: transparent;
+}
+.letter-type{
+    font-family: "August Script", cursive;
+  font-weight: 800;
+  font-size: 50px;
+  font-style: oblique;
+  transform: rotate(-3deg);
+}
+.letter-type-2{
+  font-family: "August Script", cursive;
+  font-weight: 800;
+  font-size: 40px;
+  font-style: oblique;
+  transform: rotate(-3deg);
+}
+
+@keyframes spin {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.hint { 
+  color: #444; 
+  font-size: 14px; 
+}

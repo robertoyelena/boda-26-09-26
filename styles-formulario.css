@@ -1,0 +1,672 @@
+html, body { 
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body { 
+  font-family: "Cormorant Garamond", serif; 
+  padding: 0px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.formulario {
+  display: grid;
+  gap: 15px;
+}
+
+h1 {
+  color: #333;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.wedding-hero {
+  background-image: url(IMG_6352.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+  background-size: cover;
+  margin: 0;
+  margin-bottom: 0;
+  height:600px;
+}
+
+.wedding-hero .subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.wedding-hero .name {
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 90px;
+}
+.wedding-hero .name2 {
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.wedding-hero .ampersand {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  color: #b8a96a;
+  margin: 2px 0;
+}
+
+.wedding-hero .date {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  color: #ccc;
+  margin-top: 200px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+.wedding-hero .cta {
+
+  margin-bottom: 20px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 4px;
+  animation: bounce 2s infinite;
+  order: 999;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.countdown {
+  background-color:rgba(100, 23, 64, 1) ;
+  color: white;
+  padding: 20px 30px;
+  margin: 0;
+  margin-bottom: 0;
+  text-align: center;
+  height: 300px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.countdown h2 {
+  margin: 0 0 3px 0;
+  font-size: 24px;
+}
+
+.countdown-units {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.countdown-unit {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flip-card {
+  width: 100%;
+  aspect-ratio: 4/3;
+  perspective: 1000px;
+  position: relative;
+  background: #7E8569;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner.flip {
+  transform: rotateX(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: white;
+  z-index: 2;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateX(180deg);
+  display: none;
+}
+
+.countdown-label {
+  font-size: 17px;
+  color: #7E8569;
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+.localizacion {
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  padding: 10px 0 0 0;
+  background-color: rgba(245, 241, 234, 1);
+  text-align: center;
+  height: 1300px;
+}
+
+.localizacion h2 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.localizacion-inner {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 8px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 90%;
+  margin: 3px auto;
+  height: 500px;
+}
+
+.mapa-container {
+  width: 80%;
+  height: 300px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px auto;
+}
+
+.mapa-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.boton-mapa {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 24px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.localization-button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 24px;
+  background-color: #641740;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: 70%;
+  margin-bottom: 5px;
+}
+
+.localization-button:hover {
+  background-color: #555;
+}
+
+.boton-mapa:hover {
+  background-color: #555;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 0.5px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 600px;
+  font-family: "Cormorant Garamond", serif;
+  margin: 0 0 15px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.faq-trigger:hover {
+  background: #f5f5f5;
+}
+
+.faq-question {
+  font-size: 15px;
+  color: #666;  font-style: normal;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+.faq-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border: 0.5px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  color: #888880;
+  font-size: 13px;
+}
+
+.faq-icon.open {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 24px;
+}
+
+.faq-answer.open {
+  max-height: 300px;
+  padding: 0 24px 20px;
+}
+
+.faq-answer-inner {
+  border-top: 0.5px solid #e0e0e0;
+  padding-top: 8px;
+  font-size: 14px;
+  color: #888880;
+  line-height: 1.7;
+}
+
+.colage {
+  margin: 0;
+  text-align: center;
+  padding: 15px 20px;
+  background-color: rgba(142, 149, 118, 1);
+  font-family: "Cormorant Garamond", serif;
+}
+
+.colage p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.colage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.colage-grid img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  background-color: #f0f0f0;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.colage-grid img:hover {
+  transform: scale(1.05);
+}
+
+
+.colage-grid img:nth-child(13) {
+  
+  object-position: top;
+  
+}
+.colage-grid img:nth-child(14) {
+  
+  object-position: top;
+  
+}
+
+.texto-esquileo{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    height: auto;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.texto-esquileo p {
+    font-family: "Cormorant Garamond", serif;
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.5;
+    font-size:14px;
+   
+}
+.preparacion{
+  margin: 0;
+  padding: 30px 20px;
+  background-color: #8E9576;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 850px;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.preparacion h2 {
+  margin: 0 0 20px 0;
+  color: #fff;
+}
+
+.preparacion p {
+  margin: 0 0 20px 0;
+  color: #fff;
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+.preparacion img {
+  margin: 20px 0;
+  max-width: 90%;
+  height: auto;
+}
+.alojamientos{
+    margin: 0;
+    padding: 30px 20px;
+    background-color: #F5F1EA;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.alojamientos h2 {
+    margin: 0 0 20px 0;
+    color: #333;
+}
+
+.alojamientos > p:first-of-type {
+    margin: 0 0 30px 0;
+    color: #8E9576;
+    max-width: 90%;
+    line-height: 1.6;
+}
+
+.alojamientos p{
+    color: #8E9576;
+    margin: 5px 0;
+}
+
+.alojamientos-inner{
+    margin: 15px 0;
+    padding: 20px;
+    text-align: left;
+    background-color: #F1ECE2;
+    border-radius: 4px;
+    width: 85%;
+    max-width: 500px;
+}
+
+.alojamientos-inner h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.alojamientos-inner p {
+    margin: 0 0 15px 0;
+    color: #8E9576;
+    font-size: 14px;
+}
+
+.alojamientos-inner button {
+    background-color: #8E9576;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.alojamientos-inner a.button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.alojamientos-inner a.button:hover {
+    text-decoration: none;
+}
+.preboda{
+    margin: 0;
+    padding: 30px 20px;
+    background-color: rgba(100, 23, 64, 1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.preboda h2 {
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+.preboda > p {
+    margin: 0 0 15px 0;
+    color: #fff;
+    max-width: 90%;
+    line-height: 1.6;
+}
+
+.localizacion-inner-2{
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width: 85%;
+    max-width: 500px;
+}
+
+.localizacion-inner-2 h3 {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.localizacion-inner-2 p {
+    margin: 0 0 15px 0;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.preguntas{
+    margin: 0;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background-color: #f9f7f3;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.preguntas h2 {
+    margin: 0 0 25px 0;
+    color: #333;
+}
+.button_preboda{
+    display: block;
+    margin: 15px auto 0;
+    padding: 12px 30px;
+    background-color: #F1ECE2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    width: 70%;
+    border: none;
+}
+
+.button_preboda:hover {
+    background-color: #e6ddd2;
+}
+
+.localizacion-inner-2 .mapa-container {
+    
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.imagen-fiestas {
+  width: 80%;
+  height: 500px;
+  background-image: url("fotoPreparados.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
