@@ -75,9 +75,12 @@ button {
 }
 
 .wedding-hero {
+  background-color: #333;
   background-image: url(IMG_6352.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
   
   display: flex;
   flex-direction: column;
@@ -86,7 +89,6 @@ button {
   text-align: center;
   padding: 40px 20px;
   color: #fff;
-  background-size: cover;
   margin: 0;
   margin-bottom: 0;
   height:650px;
