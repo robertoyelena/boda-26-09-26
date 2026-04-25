@@ -17,8 +17,7 @@
     
   </div>
 
-  <p style="text-align: center; margin-top: -250px;" class="letter-type">nos casamos</p>
-  <p style="text-align: center; margin-top: -70px;" class="letter-type-2">y no sería lo mismo sin vosotros.</p>
+  <img src="titulo.png" alt="nos casamos" style="text-align: center; margin-top: -250px; display: block; margin-left: auto; margin-right: auto; max-width: 70%; height: auto;" class="letter-type" />
 
   <script>
     const img = document.getElementById("sobre");
@@ -28,14 +27,13 @@
       if (animando) return;
 
       animando = true;
-      img.style.animation = 'spin 1.5s linear';
-
+      document.body.style.backgroundColor = '#000';
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 1.5s ease-out';
+      
       setTimeout(() => {
-        animando = false;
-        img.style.animation = 'none';
-        img.style.transform = 'rotate(0deg)';
         window.location.href = "boda.html";
-      }, 1500);
+      }, 500);
     });
 </script>
 </body>
