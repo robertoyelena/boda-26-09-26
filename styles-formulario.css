@@ -250,7 +250,7 @@ button:hover {
   padding: 10px 0 0 0;
   background-color: rgba(245, 241, 234, 1);
   text-align: center;
-  height: 1300px;
+  height: 1230px;
 }
 
 .localizacion h2 {
@@ -502,7 +502,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 900px;
+    height: 800px;
     font-family: "Cormorant Garamond", serif;
 }
 
